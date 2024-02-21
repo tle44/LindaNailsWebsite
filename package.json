@@ -1,5 +1,5 @@
 {
-  "name": "foodie-zone",
+  "name": "linda-nails",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -28,6 +28,6 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.8"
+    "vite": "^5.1.3"
   }
 }
