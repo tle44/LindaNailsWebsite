@@ -1,5 +1,5 @@
 import React from "react";
-import BiryaniImg from "../../assets/aboutUs1.png";
+import BiryaniImg from "../../assets/aboutUs.png";
 // import Vector from "../../assets/vector3.png";
 // import { GrSecure } from "react-icons/gr";
 // import { IoFastFood } from "react-icons/io5";

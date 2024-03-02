@@ -1,0 +1,20 @@
+[
+    {
+        "serviceName": "Classic Manicure",
+        "price": 25
+    },
+    {
+        "serviceName": "Shellac Manicure",
+        "price": 35
+    },
+    {
+        "serviceName": "Mani & Pedi Service",
+        "price": 20
+    },
+    {
+
+        "serviceName": "SHELLAC POLISH CHANGE ON HANDS (0)",
+        "price": 15
+       
+    }
+]

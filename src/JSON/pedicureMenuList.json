@@ -1,0 +1,89 @@
+[
+    {
+        "serviceName": "No Time Pedicure",
+        "price": 30,
+        "description": "Including Ice Cooling Gel Treatment with 5 Mins Massage",
+        "additionalInfo": [
+            "Ice Cooling Gel",
+            "Hot Towel Wrap",
+            "5 Mins Massage"
+        ]
+    },
+    {
+        "serviceName": "Escape Pedicure",
+        "price": 38,
+        "description": "Including Exfoliation With Cnd Scrub and Moisturizing Mask Refreshes Skin With 7 Mins Massage",
+        "additionalInfo": [
+            "2 Mins Scrub",
+            "Hot Towel Wrap",
+            "Mask",
+            "7 Mins Massage"
+        ]
+    },
+    {
+        "serviceName": "Cosmo Pedicure",
+        "price": 48,
+        "description": "As Escape Pedicure Plus Paraffin Wax treatment To Exfoliates Dry Skin Revealing",
+        "additionalInfo": [
+            "3 Mins Scrub",
+            "Mask",
+            "Hot Towel Wrap",
+            "Fresh Lemon And Orange",
+            "Paraffin Wax",
+            "10 Mins Massage"
+        ]
+    },
+  
+    {
+        "serviceName": "Milk & Honey Pedicure",
+        "price": 58,
+        "description": "Submerge your feet in warm milk and honey foot bath. Honey sugar scrub will slough and buff the dead skin away. unveiling new healthy skin.",
+        "additionalInfo": [
+            "4 Mins Scrub",
+            "Mask",
+            "Hot stone massage",
+            "Hot towel wrap",
+            "Fresh lemon and Aloe Vera",
+            "Paraffin wax",
+            "Herbal Neck Wrap",
+            "12 Mins Massage"
+        ]
+    },
+   
+    {
+        "serviceName": "Volcano Pedicure",
+        "price": 70,
+        "description": "Bubbling to activate deep detox with fun bubbling explosion. This luxury pedicure also includes exfoliating scrub, collagen cream mask, creamy collagen massaging lotion made with ORGANIC base ingredients.",
+        "additionalInfo": [
+            "5 Mins Scrub",
+            "Mask",
+            "Hot stone massage",
+            "Hot towel wrap",
+            "15 Mins Massage",
+            "Fresh lemon, orange & Aloe Vera .",
+            "Paraffin wax",
+            "Herbal Neck Wrap",
+            "Oil Candle Massage (will take you to the next level of relaxing)"
+        ]
+    },
+    {
+        "serviceName": "Shellac on Pedicure",
+        "price": 18
+    },
+    {
+        "serviceName": "SHELLAC CHANGE ON TOES ONLY",
+        "price": 20
+    },
+    {
+        "serviceName": "Remove shellac No services",
+        "price": 5
+    },
+    {
+        "serviceName": "Acrylic on TWO big toes",
+        "price": 12
+    },
+    {
+        "serviceName": "FILL ON BIG TOE",
+        "price": 3
+    }
+]

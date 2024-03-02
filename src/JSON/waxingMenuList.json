@@ -1,0 +1,50 @@
+[
+    {
+        "serviceName": "Eyebrow",
+        "price": 12
+    },
+    {
+        "serviceName": "Lip",
+        "price": 6
+    },
+    {
+        "serviceName": "Chin",
+        "price": 8
+    },
+    {
+        "serviceName": "Face Wax",
+        "price": 40
+    },
+    {
+        "serviceName": "Under Arms",
+        "price": 30
+    },
+    {
+        "serviceName": "Half Arms",
+        "price": 30
+    },
+    {
+        "serviceName": "Full Arms",
+        "price": 50
+    },
+    {
+        "serviceName": "Full Back",
+        "price": 50
+    },
+    {
+        "serviceName": "Bikini",
+        "price": 40
+    },
+    {
+        "serviceName": "Chest",
+        "price": 30
+    },
+    {
+        "serviceName": "Half Legs",
+        "price": 40
+    },
+    {
+        "serviceName": "Full Legs",
+        "price": 60
+    }
+]

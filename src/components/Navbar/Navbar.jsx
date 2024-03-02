@@ -1,6 +1,7 @@
 import React from "react";
 // import Logo from "../../assets/2.png";
 import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -21,29 +22,26 @@ const Navbar = () => {
                         <div className="flex items-center gap-4">
                             <ul className="hidden sm:flex gap-4 ">
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link to="/"
                                         className="inline-block py-4 px-4 hover:text-primary text-[22px]"
                                     >
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link to="/gallery"
                                         className="inline-block py-4 px-4 hover:text-primary text-[22px]"
                                     >
                                         Gallery
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
-                                    <a
-                                        href="#"
+                                    <Link to="/service"
                                         className="inline-block py-4 px-4 hover:text-primary text-[22px]"
                                     >
                                         Our service
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
 

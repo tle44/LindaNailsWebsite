@@ -1,0 +1,63 @@
+[
+    {
+        "serviceName": "Shape Design",
+        "price": 5
+    },
+    {
+        "serviceName": "Acrylic Removal Only",
+        "price": 10
+    },
+    {
+        "serviceName": "Add French",
+        "price": 5
+    },
+    {
+        "serviceName": "SNS Removal Only",
+        "price": 10
+    },
+    {
+        "serviceName": "Long Nails",
+        "price": 5,
+        "additionalInfo": "(Depends on length)"
+    },
+    {
+        "serviceName": "Shellac on Pedi Service",
+        "price": 15
+    },
+    {
+        "serviceName": "Nail Design",
+        "price": 7
+    },
+    {
+        "serviceName": "Add On",
+        "price": 15
+    },
+    {
+        "serviceName": "Remove Old Shellac",
+        "price": 3
+    },
+    {
+        "serviceName": "Remove Acrylic w/service",
+        "price": 5
+    },
+    {
+        "serviceName": "Acrylic to big toe",
+        "price": 6
+    },
+    {
+        "serviceName": "2 NAILS DESIGN",
+        "price": 7
+    },
+    {
+        "serviceName": "FRENCH DESIGN",
+        "price": 5
+    },
+    {
+        "serviceName": "ACRYLIC ON BIG TOE",
+        "price": 6
+    },
+    {
+        "serviceName": "ACRYLIC REMOVAL W/OUT SERVICE",
+        "price": 10
+    }
+]

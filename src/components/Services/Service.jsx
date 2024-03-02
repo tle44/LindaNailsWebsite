@@ -1,7 +1,7 @@
 import React from "react";
-import Img from "../../assets/manicure2.jpeg";
-import Img2 from "../../assets/pedicure1.jpeg";
-import Img3 from "../../assets/service.jpeg";
+import Img from "../../assets/service1.jpeg";
+import Img2 from "../../assets/service2.jpeg";
+import Img3 from "../../assets/service3.jpeg";
 
 // import StarRatings from "react-star-ratings";
 const ServicesData = [
