@@ -7,7 +7,7 @@ const Menu = ({ menuTitle, menuList }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="relative flex flex-col items-center w-[440px] h-auto ">
+        <div className="relative flex flex-col items-center w-full sm:w-[400px] h-auto ">
             <button
                 onClick={() => setIsOpen((prev) => !prev)}
                 className="bg-third p-4 w-full flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active_text-white"
