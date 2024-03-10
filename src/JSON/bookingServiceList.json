@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "serviceTitle": "Manicure",
+      "serviceItems": [
+        {
+          "serviceItemName": "Fullset",
+          "price": "$30"
+        },
+        {
+          "serviceItemName": "Refill",
+          "price": "$20"
+        }
+      ]
+    },
+    {
+      "serviceTitle": "Pedicure",
+      "serviceItems": [
+        {
+          "serviceItemName": "Regular Pedicure",
+          "price": "$35"
+        },
+        {
+          "serviceItemName": "Spa Pedicure",
+          "price": "$45"
+        }
+      ]
+    },
+    {
+      "serviceTitle": "Waxing",
+      "serviceItems": [
+        {
+          "serviceItemName": "Leg Waxing",
+          "price": "$40"
+        },
+        {
+          "serviceItemName": "Arm Waxing",
+          "price": "$25"
+        }
+      ]
+    }
+  ]
+}

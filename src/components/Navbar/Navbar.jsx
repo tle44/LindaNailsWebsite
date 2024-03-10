@@ -1,37 +1,79 @@
 import React, { useState } from "react";
-import { FaCartShopping } from "react-icons/fa6";
 import { CiMenuFries } from "react-icons/ci";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+    const location = useLocation();
 
+    const isLinkActive = (path) => location.pathname === path;
     const content = (
         <>
             <div className="lg:hidden flex justify-center w-full bg-white transition">
                 <ul className="text-center text-xl p-20">
-                    <Link to="/">
-                        <li className="my-4 py-4 transition duration-300 hover:bg-third hover:rounded">
-                            Home
-                        </li>
-                    </Link>
-                    <Link to="/gallery">
-                        <li className="my-4 py-4 transition duration-300 hover:bg-third hover:rounded">
-                            Gallery
-                        </li>
-                    </Link>
-                    <Link to="/service">
-                        <li className="my-4 py-4 transition duration-300 hover:bg-third hover:rounded">
-                            Our Service
-                        </li>
-                    </Link>
-                    <button>
-                        <i className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full flex items-center gap-2 text-[22px]">
-                            Book now
-                        </i>
-                    </button>
+                    <li>
+                        <NavLink
+                            to="/"
+                            exact
+                        >
+                            <div
+                                className={`my-4 py-4 transition duration-300 ${
+                                    isLinkActive("/") ? "bg-third rounded" : ""
+                                }`}
+                            >
+                                Home
+                            </div>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/gallery"
+                        >
+                            <div
+                                className={`my-4 py-4 transition duration-300 ${
+                                    isLinkActive("/gallery")
+                                        ? "bg-third rounded"
+                                        : ""
+                                }`}
+                            >
+                                Gallery
+                            </div>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/service"
+                        >
+                            <div
+                                className={`my-4 py-4 transition duration-300 ${
+                                    isLinkActive("/service")
+                                        ? "bg-third rounded"
+                                        : ""
+                                }`}
+                            >
+                                Our Service
+                            </div>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/booking"
+
+                        >
+                            <div
+                                className={`bg-primary hover:scale-105 duration-300 text-white mt-5 py-1 px-4 rounded-full flex items-center gap-2 text-[22px] ${
+                                    isLinkActive("/booking")
+                                        ? "bg-white text-black border-2 border-primary"
+                                        : ""
+                                }`}
+                            >
+                                Book now
+                            </div>
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </>
@@ -42,45 +84,67 @@ const Navbar = () => {
                 <div className="container py-3 sm:py-0 mx-auto">
                     <div className="flex justify-between items-center gap-2 text-2xl sm:text-3xl">
                         <div>
-                            <Link
+                            <NavLink
                                 to="/"
                                 className="flex items-center text-[35px]"
                             >
                                 Linda's Nails
-                            </Link>
+                            </NavLink>
                         </div>
                         <div className="flex items-center gap-4">
-                            <ul className="hidden sm:flex gap-4 ">
+                            <ul className="hidden sm:flex gap-4">
                                 <li>
-                                    <Link
+                                    <NavLink
                                         to="/"
-                                        className="inline-block py-4 px-4 hover:text-primary text-[22px]"
+                                        className={`inline-block py-4 px-4 hover:text-primary text-[22px] ${
+                                            isLinkActive("/")
+                                                ? "text-third"
+                                                : ""
+                                        }`}
                                     >
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link
+                                    <NavLink
                                         to="/gallery"
-                                        className="inline-block py-4 px-4 hover:text-primary text-[22px]"
+                                        className={`inline-block py-4 px-4 hover:text-primary text-[22px] ${
+                                            isLinkActive("/gallery")
+                                                ? "text-third"
+                                                : ""
+                                        }`}
                                     >
                                         Gallery
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link
+                                    <NavLink
                                         to="/service"
-                                        className="inline-block py-4 px-4 hover:text-primary text-[22px]"
+                                        className={`inline-block py-4 px-4 hover:text-primary text-[22px] ${
+                                            isLinkActive("/service")
+                                                ? "text-third"
+                                                : ""
+                                        }`}
                                     >
                                         Our service
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
 
                             <button>
-                                <i className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full flex items-center gap-2 text-[22px]">
-                                    Book now
-                                </i>
+                                <NavLink
+                                    to="/booking"
+                                >
+                                    <i
+                                        className={`bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full flex items-center gap-2 text-[22px] ${
+                                            isLinkActive("/booking")
+                                                ? "bg-white text-black border-2 border-primary"
+                                                : ""
+                                        }`}
+                                    >
+                                        Book now
+                                    </i>
+                                </NavLink>
                             </button>
                         </div>
                         <button

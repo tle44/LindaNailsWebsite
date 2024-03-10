@@ -3,7 +3,6 @@ import Img from "../../assets/service1.jpeg";
 import Img2 from "../../assets/service2.jpeg";
 import Img3 from "../../assets/service3.jpeg";
 
-// import StarRatings from "react-star-ratings";
 const ServicesData = [
     {
         id: 1,

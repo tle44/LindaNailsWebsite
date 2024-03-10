@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
+import BookingPage from "./pages/BookingPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -16,13 +17,19 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "gallery",
+        path: "/gallery",
         element: <GalleryPage />,
     },
     {
-        path: "service",
+        path: "/service",
         element: <ServicePage/>,
     },
+    {
+        path: "/booking",
+        element: <BookingPage/>,
+    },
+
+
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
