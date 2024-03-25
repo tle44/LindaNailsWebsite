@@ -1,0 +1,24 @@
+
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "specialization": "Manicure"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "specialization": "Pedicure"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "specialization": "Nail Art"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "specialization": "Gel Nails"
+    }
+  ]
+  
