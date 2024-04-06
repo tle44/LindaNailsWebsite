@@ -11,8 +11,9 @@ const BookingPage = () => {
                     </p>
                     <h1 className="text-3xl sm:text-4xl font-bold">Booking</h1>
                     <p className="text-sm text-gray-400">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Perspiciatis delectus architecto error nesciunt,
+                        Discover the convenience of hassle-free scheduling for
+                        your pedicure and manicure appointments. Book your sessions instantly, anytime, from
+                        anywhere.
                     </p>
                 </div>
 

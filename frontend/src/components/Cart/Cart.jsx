@@ -1,6 +1,5 @@
-// Cart.js
 import React from "react";
-import CartItem from "./CartItem";
+import CartItem from "./CartItem"; // Import the CartItem component
 
 const Cart = ({
     cart,
@@ -13,20 +12,17 @@ const Cart = ({
         <div className="p-4 my-10 relative flex flex-col items-center">
             <h3 className="font-bold text-lg mr-2">Cart:</h3>
             <div>
-                {/* Display items in the cart using CartItem component */}
+                {/* Render each item in the cart using the CartItem component */}
                 {cart.map((item, cartIndex) => (
-                 
-                 <CartItem 
-                     key={cartIndex}
-                     item={item}
-                     onIncrement={() => incrementQuantity(cartIndex)}
-                     onDecrement={() => decrementQuantity(cartIndex)}
-                     onRemove={() => removeCartItem(cartIndex)}
-                     
-                     
-                 />
-       
-         ))}
+                    <CartItem
+                        key={cartIndex}
+                        item={item}
+                        onIncrement={() => incrementQuantity(cartIndex)}
+                        onDecrement={() => decrementQuantity(cartIndex)}
+                        onRemove={() => removeCartItem(cartIndex)}
+                    />
+                ))}
+                {/* Display a button to clear the cart if it's not empty */}
                 {cart.length > 0 && (
                     <button
                         onClick={clearCart}

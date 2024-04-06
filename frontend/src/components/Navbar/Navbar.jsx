@@ -171,7 +171,7 @@ const Navbar = () => {
                             <button>
                                 <NavLink
                                     to="/booking"
-                                    activeclassname="hover:bg-third hover:rounded"
+                                    activeClassName="hover:bg-third hover:rounded"
                                 >
                                     <i
                                         className={`bg-primary hover:scale-105 duration-300 py-1 px-4 rounded-full flex items-center gap-2 text-[22px] ${

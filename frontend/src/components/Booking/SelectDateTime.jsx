@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const SelectDateTime = ({ onDateTimeChange }) => {
+    // Function to format date and time
     const formatDateTime = (dateTime) => {
         const options = {
             weekday: "long",
@@ -14,22 +15,25 @@ const SelectDateTime = ({ onDateTimeChange }) => {
         return new Date(dateTime).toLocaleString("en-US", options);
     }; 
 
+    // State to store the selected date and time
     const [selectedDateTime, setSelectedDateTime] = useState("");
 
+    // Handler for input change event
     const handleDateTimeInput = (event) => {
         const dateTimeValue = event.target.value;
         const formattedDateTime = formatDateTime(dateTimeValue);
         setSelectedDateTime(formattedDateTime);
     };
 
+    // Effect to call onDateTimeChange when selectedDateTime changes
     useEffect(() => {
-        // Call onDateTimeChange when selectedDateTime changes
         onDateTimeChange(selectedDateTime);
     }, [selectedDateTime, onDateTimeChange]);
 
     return (
         <div className="container mx-auto p-4 max-w-[500px]">
             <div className="flex flex-col items-center">
+                {/* Label for date and time selection */}
                 <label
                     className="text-2xl sm:text-3xl font-bold mb-4"
                     htmlFor="appointmentDateTime"
@@ -37,6 +41,7 @@ const SelectDateTime = ({ onDateTimeChange }) => {
                     Select Date & Time:
                 </label>
 
+                {/* Input field for date and time */}
                 <input
                     type="datetime-local"
                     id="appointmentDateTime"

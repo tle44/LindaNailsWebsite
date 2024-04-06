@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
-import Cart from "../Cart/Cart";
-import bookingServiceList from "../../JSON/bookingServiceList.json";
-import { FaShoppingCart } from "react-icons/fa";
-import { FaCheckSquare, FaRegSquare } from "react-icons/fa";
+import Cart from "../Cart/Cart"; // Import the Cart component
+import bookingServiceList from "../../JSON/bookingServiceList.json"; // Import the booking service list data
+import { FaShoppingCart } from "react-icons/fa"; // Import icons
+import { FaCheckSquare, FaRegSquare } from "react-icons/fa"; 
 
 const SelectService = ({ onCartUpdate }) => {
-    const [selectedService, setSelectedService] = useState(null);
-    const [cart, setCart] = useState([]);
-    const [isCartOpen, setCartOpen] = useState(false);
+    const [selectedService, setSelectedService] = useState(null); // State to track selected service category
+    const [cart, setCart] = useState([]); // State to manage the cart items
+    const [isCartOpen, setCartOpen] = useState(false); // State to manage cart visibility
 
-    const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
+    const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0); // Calculate total quantity of items in cart
 
+    // Function to handle click event on service category
     const handleButtonClick = (index) => {
         setSelectedService((prevSelected) =>
             prevSelected === index ? null : index
         );
     };
 
+    // Function to handle click event on service item
     const handleServiceItemClick = (index) => {
         const selectedServiceItem =
             bookingServiceList.categories[selectedService].serviceItems[index];
@@ -45,10 +47,12 @@ const SelectService = ({ onCartUpdate }) => {
         }
     };
 
+    // Function to clear the cart
     const clearCart = () => {
         setCart([]);
     };
 
+    // Function to increment quantity of a cart item
     const incrementQuantity = (index) => {
         setCart((prevCart) =>
             prevCart.map((item, cartIndex) =>
@@ -59,6 +63,7 @@ const SelectService = ({ onCartUpdate }) => {
         );
     };
 
+    // Function to decrement quantity of a cart item
     const decrementQuantity = (index) => {
         setCart((prevCart) =>
             prevCart.map((item, cartIndex) =>
@@ -69,12 +74,14 @@ const SelectService = ({ onCartUpdate }) => {
         );
     };
 
+    // Function to remove a cart item
     const removeCartItem = (index) => {
         setCart((prevCart) =>
             prevCart.filter((item, cartIndex) => cartIndex !== index)
         );
     };
 
+    // Function to toggle cart visibility
     const toggleCart = () => {
         setCartOpen(!isCartOpen);
     };
@@ -104,6 +111,7 @@ const SelectService = ({ onCartUpdate }) => {
                     Select Service
                 </h2>
                 <div className="space-y-4 w-full">
+                    {/* Display service categories */}
                     {bookingServiceList.categories.map((item, index) => (
                         <div key={index}>
                             <div
@@ -112,6 +120,7 @@ const SelectService = ({ onCartUpdate }) => {
                             >
                                 {item.serviceTitle}
                             </div>
+                            {/* Display service items for selected category */}
                             {selectedService === index && (
                                 <div className="space-y-4 mt-4">
                                     {item.serviceItems.map(

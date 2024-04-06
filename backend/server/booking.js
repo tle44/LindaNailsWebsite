@@ -50,7 +50,6 @@ router.post("/", (req, res) => {
         selectedTechnician,
     } = req.body;
 
-    console.log("Received booking data:", req.body);
 
     const mailOptions = {
         from: email,
