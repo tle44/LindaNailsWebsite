@@ -73,7 +73,7 @@ const Checkout = ({ selectedDateTime, cart, selectedTechnician }) => {
 
             // Make a POST request to book the appointment
             const response = await axios.post(
-                "http://localhost:5175/api/booking",
+                "http://13.59.158.220:5175/api/booking",
                 bookingData
             );
 
