@@ -54,7 +54,7 @@ export default function ContactPage() {
 
             // Sending POST request to the server
             const response = await axios.post(
-                "http://http://3.139.66.15/api/contact",
+                "http://localhost:5175/api/contact",
                 values
             );
 
