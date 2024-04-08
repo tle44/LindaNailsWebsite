@@ -5,7 +5,7 @@
     "type": "module",
     "proxy": "http://localhost:5175",
     "scripts": {
-        "build": "vite build",
+        "build": "CI=false react-scripts build",
         "dev": "vite",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
