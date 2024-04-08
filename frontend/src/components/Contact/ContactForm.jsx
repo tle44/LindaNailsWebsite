@@ -55,7 +55,13 @@ export default function ContactPage() {
             // Sending POST request to the server
             const response = await axios.post(
                 "http://13.59.158.220:5175/api/contact",
-                values
+                values,
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                        // Add any additional headers as needed
+                    },
+                }
             );
 
             // Display success message

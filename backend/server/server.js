@@ -7,6 +7,11 @@ import path from "path"; // Import path module
 
 // Creating an Express application
 const app = express();
+// Enable CORS for all requests
+app.use(cors());
+
+// Handle preflight requests
+app.options("*", cors());
 
 const __filename = new URL(import.meta.url).pathname;
 const _dirname = path.dirname(__filename);
@@ -24,9 +29,6 @@ app.get("/*", function (req, res) {
         }
     );
 });
-
-// Enable CORS for all requests
-app.use(cors());
 
 // Parse JSON request body
 app.use(express.json());
