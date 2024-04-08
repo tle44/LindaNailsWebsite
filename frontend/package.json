@@ -3,6 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "proxy": "http://localhost:5175",
     "scripts": {
         "build": "NODE_ENV=production tsc && cd frontend && npm install && npm run build",
         "dev": "vite",

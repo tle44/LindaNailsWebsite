@@ -72,16 +72,12 @@ const Checkout = ({ selectedDateTime, cart, selectedTechnician }) => {
             }
 
             // Make a POST request to book the appointment
-            const response = await axios.post(
-                "http://13.59.158.220:5175/api/booking",
-                bookingData,
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                        // Add any additional headers as needed
-                    },
-                }
-            );
+            const response = await axios.post("/api/booking", bookingData, {
+                headers: {
+                    "Content-Type": "application/json",
+                    // Add any additional headers as needed
+                },
+            });
 
             // Display success toast
             toast({
