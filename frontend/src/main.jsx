@@ -6,7 +6,6 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
 import BookingPage from "./pages/BookingPage.jsx";

@@ -133,7 +133,7 @@ const SelectService = ({ onCartUpdate }) => {
                                                             cartItem.serviceItemName ===
                                                             serviceItem.serviceItemName
                                                     )
-                                                        ? "border-primary bg-orange-200" // Change background color when selected and in cart
+                                                        ? "border-primary bg-orange-200" 
                                                         : ""
                                                 }`}
                                                 onClick={() =>
