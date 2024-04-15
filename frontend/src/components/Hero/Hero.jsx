@@ -1,6 +1,6 @@
 import React from "react";
 import background from "../../assets/background.jpeg";
-
+import { NavLink } from "react-router-dom";
 const Hero = () => {
     const bgImage = {
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.05)), url(${background})`,
@@ -37,10 +37,13 @@ const Hero = () => {
                             pedicure services to ensure your satisfaction and
                             happiness. Come join us and pamper yourself!
                         </p>
+
                         <div>
-                            <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
-                                Book Now
-                            </button>
+                            <NavLink to="/booking">
+                                <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 shadow-xl rounded-full">
+                                    Book Now
+                                </button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

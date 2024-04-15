@@ -65,25 +65,7 @@
             "Herbal Neck Wrap",
             "Oil Candle Massage (will take you to the next level of relaxing)"
         ]
-    },
-    {
-        "serviceName": "Shellac on Pedicure",
-        "price": 18
-    },
-    {
-        "serviceName": "SHELLAC CHANGE ON TOES ONLY",
-        "price": 20
-    },
-    {
-        "serviceName": "Remove shellac No services",
-        "price": 5
-    },
-    {
-        "serviceName": "Acrylic on TWO big toes",
-        "price": 12
-    },
-    {
-        "serviceName": "FILL ON BIG TOE",
-        "price": 3
     }
+  
+  
 ]

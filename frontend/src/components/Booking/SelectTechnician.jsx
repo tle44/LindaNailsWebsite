@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import technicians from "../../JSON/technicians.json"; // Import the technician data
+import technicians from "../../JSON/technicians.json"; 
 import { FaCheckSquare, FaRegSquare } from "react-icons/fa";
 
 const SelectTechnician = ({ onTechnicianSelect }) => {
@@ -14,7 +14,12 @@ const SelectTechnician = ({ onTechnicianSelect }) => {
 
     // Function to handle technician selection
     const handleTechnicianSelect = (technician) => {
-        setSelectedTechnician(technician); // Update selected technician
+        // Toggle the selection
+        if (selectedTechnician === technician) {
+            setSelectedTechnician(null); // Unselect the technician
+        } else {
+            setSelectedTechnician(technician); // Update selected technician
+        }
     };
 
     return (
@@ -28,17 +33,11 @@ const SelectTechnician = ({ onTechnicianSelect }) => {
                     {technicians.map((technician, index) => (
                         <div
                             key={index}
-                            className={`bg-white text-primary p-6 flex items-center justify-between gap-5 font-bold text-md sm:text-lg rounded-lg tracking-wider border border-transparent duration-300 ${
-                                selectedTechnician === technician
-                                    ? "border-primary bg-orange-200" // Change background color when selected
-                                    : ""
-                            }`}
+                            className="bg-white text-primary p-6 flex items-center justify-between gap-5 font-bold text-md sm:text-lg rounded-lg tracking-wider border border-transparent duration-300"
                             onClick={() => handleTechnicianSelect(technician)}
                         >
-                            <div>
-                                <h3 className="font-bold">{technician.name}</h3>
-                                <p>{technician.specialization}</p>
-                            </div>
+                            <h3 className="font-bold">{technician.name}</h3>
+
                             <button className="">
                                 {selectedTechnician === technician ? (
                                     <FaCheckSquare />

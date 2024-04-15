@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -18,7 +17,7 @@ const Navbar = () => {
                         <NavLink
                             to="/"
                             exact
-                            activeClassName="hover:bg-third hover:rounded"
+                            activeclassname="hover:bg-third hover:rounded"
                         >
                             <div
                                 className={`my-4 py-4 transition duration-300 ${
@@ -32,7 +31,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/gallery"
-                            activeClassName="hover:bg-third hover:rounded"
+                            activeclassname="hover:bg-third hover:rounded"
                         >
                             <div
                                 className={`my-4 py-4 transition duration-300 ${
@@ -48,7 +47,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/service"
-                            activeClassName="hover:bg-third hover:rounded"
+                            activeclassname="hover:bg-third hover:rounded"
                         >
                             <div
                                 className={`my-4 py-4 transition duration-300 ${
@@ -61,10 +60,11 @@ const Navbar = () => {
                             </div>
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink
                             to="/contact"
-                            activeClassName="hover:bg-third hover:rounded"
+                            activeclassname="hover:bg-third hover:rounded"
                         >
                             <div
                                 className={`my-4 py-4 transition duration-300 ${
@@ -80,7 +80,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             to="/booking"
-                            activeClassName="hover:bg-third hover:rounded"
+                            activeclassname="hover:bg-third hover:rounded"
                         >
                             <div
                                 className={`bg-primary hover:scale-105 duration-300 mt-5 py-1 px-4 rounded-full flex items-center gap-2 text-[22px] ${
@@ -106,7 +106,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/"
                                 className="flex items-center text-[35px]"
-                                activeClassName="hover:bg-third hover:rounded"
+                                activeclassname="hover:bg-third hover:rounded"
                             >
                                 Linda's Nails
                             </NavLink>
@@ -121,7 +121,7 @@ const Navbar = () => {
                                                 ? "text-third"
                                                 : ""
                                         }`}
-                                        activeClassName="hover:bg-third hover:rounded"
+                                        activeclassname="hover:bg-third hover:rounded"
                                     >
                                         Home
                                     </NavLink>
@@ -134,7 +134,7 @@ const Navbar = () => {
                                                 ? "text-third"
                                                 : ""
                                         }`}
-                                        activeClassName="hover:bg-third hover:rounded"
+                                        activeclassname="hover:bg-third hover:rounded"
                                     >
                                         Gallery
                                     </NavLink>
@@ -147,7 +147,7 @@ const Navbar = () => {
                                                 ? "text-third"
                                                 : ""
                                         }`}
-                                        activeClassName="hover:bg-third hover:rounded"
+                                        activeclassname="hover:bg-third hover:rounded"
                                     >
                                         Our service
                                     </NavLink>
@@ -161,7 +161,7 @@ const Navbar = () => {
                                                 ? "text-third"
                                                 : ""
                                         }`}
-                                        activeClassName="hover:bg-third hover:rounded"
+                                        activeclassname="hover:bg-third hover:rounded"
                                     >
                                         Contact Us
                                     </NavLink>
@@ -171,7 +171,7 @@ const Navbar = () => {
                             <button>
                                 <NavLink
                                     to="/booking"
-                                    activeClassName="hover:bg-third hover:rounded"
+                                    activeclassname="hover:bg-third hover:rounded"
                                 >
                                     <i
                                         className={`bg-primary hover:scale-105 duration-300 py-1 px-4 rounded-full flex items-center gap-2 text-[22px] ${

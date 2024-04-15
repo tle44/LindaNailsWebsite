@@ -36,19 +36,7 @@ const Gallery = () => {
     };
 
     return (
-        <div className="container my-10 py-10 font-cormorant">
-            {/* Gallery title and description */}
-            <div className="text-center mb-20 max-w-[400px] mx-auto">
-                <p className="text-md bg-clip-text text-transparent bg-primary">
-                    Our Gallery
-                </p>
-                <h1 className="text-3xl sm:text-4xl font-bold">Gallery</h1>
-                <p className="text-sm text-gray-400">
-                    Join us as we delve into the world of nail fashion, where
-                    every stroke tells a story of elegance and sophistication.
-                </p>
-            </div>
-
+        <div className="container  py-20 ">
             {/* Image modal */}
             <div className={model ? "model open" : "model"}>
                 <img src={tempImgSrc} alt="" />

@@ -1,24 +1,28 @@
-
 [
     {
-      "id": 1,
-      "name": "John Doe",
-      "specialization": "Manicure"
+        "id": 1,
+        "name": "Jessica Nguyen",
+        "specialization": "Waxing",
+        "experience_years": 8
     },
     {
-      "id": 2,
-      "name": "Jane Smith",
-      "specialization": "Pedicure"
+        "id": 2,
+        "name": "Emily Tran",
+        "specialization": "Acrylic Nails",
+        "experience_years": 10
     },
     {
-      "id": 3,
-      "name": "Alice Johnson",
-      "specialization": "Nail Art"
+        "id": 3,
+        "name": "Sophia Lee",
+        "specialization": "Gel Nails",
+        "experience_years": 6
     },
     {
-      "id": 4,
-      "name": "Bob Brown",
-      "specialization": "Gel Nails"
+        "id": 4,
+        "name": "Linda Nguyen",
+        "specialization": "Nails Art",
+        "experience_years": 7
     }
-  ]
   
+
+]

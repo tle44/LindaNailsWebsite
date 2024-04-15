@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Cart from "../Cart/Cart"; // Import the Cart component
-import bookingServiceList from "../../JSON/bookingServiceList.json"; // Import the booking service list data
-import { FaShoppingCart } from "react-icons/fa"; // Import icons
-import { FaCheckSquare, FaRegSquare } from "react-icons/fa"; 
+import Cart from "../Cart/Cart"; 
+import bookingServiceList from "../../JSON/bookingServiceList.json"; 
+import { FaShoppingCart } from "react-icons/fa"; 
+import { FaCheckSquare, FaRegSquare } from "react-icons/fa";
 
 const SelectService = ({ onCartUpdate }) => {
     const [selectedService, setSelectedService] = useState(null); // State to track selected service category
@@ -94,7 +94,7 @@ const SelectService = ({ onCartUpdate }) => {
     return (
         <div className="container mx-auto p-4 max-w-[500px]">
             <div className="relative flex flex-col items-center">
-                {/* Cart icon with a click event */}
+                {/* Cart icon */}
                 <div
                     className="cursor-pointer absolute top-1 right-1 "
                     onClick={toggleCart}
@@ -148,6 +148,8 @@ const SelectService = ({ onCartUpdate }) => {
                                                     }
                                                 </h3>
                                                 <p>{serviceItem.price}</p>
+
+                                                <div className="flex items-center space-x-4"></div>
 
                                                 <button>
                                                     {cart.some(

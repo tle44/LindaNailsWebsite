@@ -3,40 +3,34 @@
     {
       "serviceTitle": "Manicure",
       "serviceItems": [
-        {
-          "serviceItemName": "Fullset",
-          "price": "$30"
-        },
-        {
-          "serviceItemName": "Refill",
-          "price": "$20"
-        }
+        { "serviceItemName": "Full set" },
+        { "serviceItemName": "Refill" },
+        { "serviceItemName": "Manicure with Color" },
+        { "serviceItemName": "SNS - Dipping Powder" }
       ]
     },
     {
       "serviceTitle": "Pedicure",
       "serviceItems": [
-        {
-          "serviceItemName": "Regular Pedicure",
-          "price": "$35"
-        },
-        {
-          "serviceItemName": "Spa Pedicure",
-          "price": "$45"
-        }
+        { "serviceItemName": "No Time Pedicure" },
+        { "serviceItemName": "Escape Pedicure" },
+        { "serviceItemName": "Cosmo Pedicure" },
+        { "serviceItemName": "Milk & Honey Pedicure" },
+        { "serviceItemName": "Volcano Pedicure" }
       ]
     },
     {
       "serviceTitle": "Waxing",
       "serviceItems": [
-        {
-          "serviceItemName": "Leg Waxing",
-          "price": "$40"
-        },
-        {
-          "serviceItemName": "Arm Waxing",
-          "price": "$25"
-        }
+        { "serviceItemName": "Eyebrow" },
+        { "serviceItemName": "Lip" },
+        { "serviceItemName": "Chin" },
+        { "serviceItemName": "Face Wax" },
+        { "serviceItemName": "Under Arms" },
+        { "serviceItemName": "Full Back" },
+        { "serviceItemName": "Bikini" },
+        { "serviceItemName": "Chest" },
+        { "serviceItemName": "Leg Waxing" }
       ]
     }
   ]

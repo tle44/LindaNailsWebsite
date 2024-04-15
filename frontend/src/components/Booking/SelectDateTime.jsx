@@ -10,7 +10,7 @@ const SelectDateTime = ({ onDateTimeChange }) => {
             day: "numeric",
             hour: "numeric",
             minute: "numeric",
-            hour12: true // Include AM/PM
+            hour12: true 
         };
         return new Date(dateTime).toLocaleString("en-US", options);
     }; 
@@ -47,7 +47,7 @@ const SelectDateTime = ({ onDateTimeChange }) => {
                     id="appointmentDateTime"
                     name="appointmentDateTime"
                     className="p-2 border border-gray-300 rounded-md text-md sm:text-lg focus:outline-none focus:ring focus:ring-third w-full"
-                    onChange={handleDateTimeInput} // Handle input change event
+                    onChange={handleDateTimeInput} 
                 />
             </div>
         </div>

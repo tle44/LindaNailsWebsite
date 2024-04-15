@@ -4,25 +4,14 @@ import { GrLocation } from "react-icons/gr";
 import { TbPhoneCall } from "react-icons/tb";
 
 import { TbClockHour9 } from "react-icons/tb";
+import { NavLink } from "react-router-dom";
 
 const ContactInfoComponent = () => {
     return (
-        <div className="py-10 font-cormorant">
+        <div className="  font-cormorant">
             <div className="container my-10">
                 <div className="flex flex-col justify-center items-center gap-6 sm:pt-0">
-                    {/* Title and description */}
-                    <div className="text-center mb-10 max-w-[400px] mx-auto">
-                        <p className="text-md bg-clip-text text-transparent bg-primary">
-                            Our Contact
-                        </p>
-                        <h1 className="text-3xl sm:text-4xl font-bold">
-                            Contact
-                        </h1>
-                        <p className="text-sm text-gray-400">
-                            Interested in our spa services? We want your spa
-                            experience to be a memorable one.
-                        </p>
-                    </div>
+               
 
                     {/* Contact information cards */}
                     <div className="flex flex-wrap">
@@ -57,10 +46,13 @@ const ContactInfoComponent = () => {
                     </div>
 
                     {/* "Book Now" button */}
+
                     <div>
-                        <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 shadow-xl rounded-full">
-                            Book Now
-                        </button>
+                        <NavLink to="/booking">
+                            <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 shadow-xl rounded-full">
+                                Book Now
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -4,13 +4,12 @@ import {
     Container,
     Input,
     Heading,
-    Text,
     useToast,
     FormControl,
     FormErrorMessage,
     Textarea,
-} from "@chakra-ui/react"; // Importing necessary components from Chakra UI
-import axios from "axios"; // Importing axios for making HTTP requests
+} from "@chakra-ui/react";
+import axios from "axios";
 
 // Initial form values
 const initValues = { name: "", email: "", subject: "", message: "" };
@@ -19,7 +18,6 @@ export default function ContactPage() {
     const toast = useToast(); // Initializing toast for displaying messages
     const [values, setValues] = useState(initValues); // State for form values
     const [isLoading, setIsLoading] = useState(false); // State for loading status
-    const [error, setError] = useState(""); // State for error messages
     const [touched, setTouched] = useState({}); // State to track touched fields
 
     // Function to handle input changes
@@ -53,16 +51,12 @@ export default function ContactPage() {
             }
 
             // Sending POST request to the server
-            const response = await axios.post(
-                "/api/contact",
-                values,
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                        // Add any additional headers as needed
-                    },
-                }
-            );
+            const response = await axios.post("/api/contact", values, {
+                headers: {
+                    "Content-Type": "application/json",
+                    // Add any additional headers as needed
+                },
+            });
 
             // Display success message
             toast({
@@ -73,11 +67,9 @@ export default function ContactPage() {
             });
 
             setValues(initValues); // Reset form values
-            setError(""); // Clear any previous error
             setTouched({}); // Reset touched state
         } catch (error) {
             console.error("Error sending message:", error);
-            setError(error.message); // Set error message
             // Display error message using toast
             toast({
                 title: "Error",
@@ -92,15 +84,15 @@ export default function ContactPage() {
     };
 
     return (
-        <Container maxW="450px" pb={100} fontFamily="Cormorant">
-            <Heading mb={5} textAlign="center" fontFamily="Cormorant">
+        <Container maxW="600px" mb={100} fontFamily="Cormorant">
+            <Heading textAlign="center" fontFamily="Cormorant">
                 Send a Message
             </Heading>
-            {error && (
-                <Text color="red.300" my={4} fontSize="xl">
-                    {error}
-                </Text>
-            )}
+
+            <p className=" text-center text-sm text-gray-400 mb-5">
+                Have other questions? Reach out to us by filling out the form
+                below.
+            </p>
 
             {/* Form controls */}
             <FormControl isInvalid={touched.name && !values.name} isRequired>
@@ -158,6 +150,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     onBlur={onBlur}
                     mb={5}
+                    rows={6}
                 />
             </FormControl>
 

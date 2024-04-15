@@ -1,10 +1,13 @@
 import express from "express";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config(); // Load environment variables from .env file
 
 const router = express.Router();
 
-const email = "mindylee1202@gmail.com";
-const pass = "bdtchnztxuodtnka";
+const email = process.env.EMAIL;
+const pass = process.env.PASSWORD;
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -50,10 +53,9 @@ router.post("/", (req, res) => {
         selectedTechnician,
     } = req.body;
 
-
     const mailOptions = {
         from: email,
-        to: "mindylee1202@gmail.com",
+        to: process.env.EMAIL,
         ...generateEmailContent({
             name,
             phoneNumber,
@@ -67,10 +69,8 @@ router.post("/", (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.error("Error sending email:", error);
             res.status(500).json({ message: "Failed to book appointment" });
         } else {
-            console.log("Email sent:", info.messageId);
             res.status(200).json({
                 message: "Booking request submitted successfully",
             });

@@ -1,22 +1,13 @@
 import React from "react";
 import BiryaniImg from "../../assets/aboutUs.png";
+import { NavLink } from "react-router-dom";
 
-const Banner = () => {
-    // Background image style
-    const bgImage = {
-        backgroundImage: `url(${BiryaniImg})`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "100%",
-        width: "100%",
-    };
-
+const AboutUs = () => {
+ 
     return (
         <>
             {/* Banner container */}
             <div className="min-h-[550px] font-cormorant">
-                {/* Flex container for centering content */}
                 <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0 ">
                     {/* Main content container */}
                     <div
@@ -34,7 +25,7 @@ const Banner = () => {
                                     className="max-w-[430px] w-full mx-auto filter drop-shadow-[0px 0px 12px rgba(0,0,0,0.5)] rounded-3xl"
                                 />
                             </div>
-                            {/* Text content section */}
+                            {/* Text section */}
                             <div className="flex flex-col justify-center gap-6 sm:pt-0">
                                 {/* Title */}
                                 <h1 className="text-3xl sm:text-4xl font-bold">
@@ -61,9 +52,11 @@ const Banner = () => {
                                 </p>
                                 {/* Button for booking */}
                                 <div>
-                                    <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 shadow-xl rounded-full">
-                                        Book Now
-                                    </button>
+                                    <NavLink to="/booking">
+                                        <button className="bg-primary hover:scale-105 duration-200 text-white py-2 px-4 shadow-xl rounded-full">
+                                            Book Now
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -74,4 +67,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default AboutUs;

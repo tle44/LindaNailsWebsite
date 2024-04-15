@@ -1,11 +1,7 @@
 [
     {
-        "serviceName": "SNS on Real Nails (0)",
+        "serviceName": "SNS on Real Nails",
         "price": 40
-    },
-    {
-        "serviceName": "Remove Old SNS w.Services",
-        "price": 3
     },
     {
         "serviceName": "SNS w.Tips",
@@ -15,20 +11,9 @@
         "serviceName": "SNS Add French",
         "price": 5
     },
-    {
-        "serviceName": "Remove SNS Only",
-        "price": 10
-    },
-    {
-        "serviceName": "Add Mani to SNS Services",
-        "price": 12
-    },
+   
     {
         "serviceName": "SNS Ombre w.Tips",
         "price": 58
-    },
-    {
-        "serviceName": "REMOVE SNS",
-        "price": 5
     }
 ]

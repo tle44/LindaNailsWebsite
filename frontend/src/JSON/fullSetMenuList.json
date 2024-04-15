@@ -46,66 +46,9 @@
     {
         "serviceName": "White or Pearl Tip Fill In",
         "price": 30
-    },
-    {
-        "serviceName": "FRENCH TIP",
-        "price": 5
-    },
-    {
-        "serviceName": "REPAIR (0)",
-        "price": 3
-    },
-    {
-        "serviceName": "DEEP FRENCH DESIGN",
-        "price": 15
-    },
-    {
-        "serviceName": "LONG",
-        "price": 5
-    },
-    {
-        "serviceName": "ADD CHROME",
-        "price": 15
-    },
-    {
-        "serviceName": "EXTRA LONG",
-        "price": 10
-    },
-    {
-        "serviceName": "SHAPE",
-        "price": 5
-    },
-    {
-        "serviceName": "REPAIR",
-        "price": 3
-    },
-    {
-        "serviceName": "REMOVE ACRYLIC WITH SERVICE",
-        "price": 5
-    },
-    {
-        "serviceName": "REMOVE SNS WITH SERVICE",
-        "price": 3
-    },
-    {
-        "serviceName": "REMOVE ACRYLIC",
-        "price": 5
-    },
-    {
-        "serviceName": "REMOVE SHELLAC",
-        "price": 3
-    },
-    {
-        "serviceName": "REMOVE ACRYLIC W/O SERVICES",
-        "price": 10
-    },
-    {
-        "serviceName": "ADD MANICURE",
-        "price": 12
-    },
-    {
-        "serviceName": "REMOVE SHELLAC",
-        "price": 3
     }
+  
+  
+    
 ]
 
